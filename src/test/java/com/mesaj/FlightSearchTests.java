@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
+import java.io.IOException;
+
 @SpringBootTest
 @ContextConfiguration(classes = {TestConfig.class})
 class FlightSearchTests {
@@ -25,7 +27,7 @@ class FlightSearchTests {
 	private String searchType;
 
 	@Test
-	void searchFlight() {
+	void searchFlight()  {
 
 		System.out.println("Current search type: " + searchType);
 		homePage.navigate(searchType);
