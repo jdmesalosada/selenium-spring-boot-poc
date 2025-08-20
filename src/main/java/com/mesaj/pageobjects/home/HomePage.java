@@ -4,13 +4,11 @@ import com.mesaj.models.SearchInfo;
 import com.mesaj.pageobjects.search.FlightSearchComponent;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-import java.net.URL;
 
 @Component
 public class HomePage {
